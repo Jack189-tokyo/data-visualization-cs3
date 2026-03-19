@@ -86,9 +86,15 @@ fig.legend(handles=legend_elements,
           handletextpad=0.8,
           borderpad=0.8)
 
-# 保存图片
+# 保存图片 - 高质量版本
 plt.savefig('crime_rates_by_state_2005_premium.png', 
             dpi=300, bbox_inches='tight', 
+            facecolor='white', edgecolor='none',
+            pad_inches=0.5)
+
+# 保存图片 - README版本（较小）
+plt.savefig('crime_rates_by_state_2005_readme.png', 
+            dpi=150, bbox_inches='tight', 
             facecolor='white', edgecolor='none',
             pad_inches=0.5)
 
